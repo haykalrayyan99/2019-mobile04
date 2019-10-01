@@ -25,12 +25,13 @@
         android:orientation="horizontal"
         android:weightSum="3"
         >
+
         <TextView
-            android:text="@string/username"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            />
+            android:text="@string/username" />
+
         <EditText
             android:id="@+id/input_username"
             android:hint="@string/username_hint"
@@ -86,9 +87,9 @@
     </LinearLayout>
 
     <Button
-        android:text="@string/submit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:onClick="handleSubmit"
+        android:text="@string/submit" />
 
 </LinearLayout>

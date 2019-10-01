@@ -2,6 +2,7 @@ package id.ac.polinema.intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -23,6 +24,11 @@ public class ExplicitIntentActivity extends AppCompatActivity {
     public void handleSubmit(View view) {
         String name = nameInput.getText().toString();
         outputText.setText("Hello "+ name);
+    }
+
+    public void handleImplicitIntent(View view) {
+        Intent intent = new Intent(this, ImplicitIntentActivity.class);
+        startActivity(intent);
     }
 }
 

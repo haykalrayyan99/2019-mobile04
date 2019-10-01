@@ -51,8 +51,9 @@ public class ImplicitIntentActivity extends AppCompatActivity {
         }
     }
 
-    public void handleChangeAvatar(View View) {
+    public void handleChangeAvatar(View view) {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(intent, GALLERY_REQUEST_CODE);
+
     }
 }
